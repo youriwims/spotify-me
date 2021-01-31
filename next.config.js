@@ -1,4 +1,4 @@
 module.exports = {
-    basePath: '/spotify-me/',
+    basePath: '/spotify-me',
     assetPrefix: '/spotify-me/',
 }
