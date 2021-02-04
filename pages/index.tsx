@@ -1,17 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export async function getStaticProps() {
-  const songs = await fetch('http://localhost:3000/spotify-me/api/top-songs');
-  return {
-    props: {
-      songs
-    }
-  }
-}
-
-const Home = ({songs}) => {
-  console.log(`SONGS`, songs);
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
