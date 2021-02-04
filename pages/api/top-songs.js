@@ -13,9 +13,7 @@ export default async (_, res) => {
     image: song.album.images[1].url
   }));
 
-  console.log(songs)
-
   // TODO: Add error-handling
 
-  return res.status(200).json({ songs });
+  return res.status(200).json({songs});
 };
