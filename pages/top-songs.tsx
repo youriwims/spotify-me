@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 export async function getStaticProps() {
   const response = await fetch(
-    "http://localhost:3000/spotify-me/api/top-songs"
+    `${process.env.DOMAIN}/spotify-me/api/top-songs`
   );
   const songs = await response.json();
 
